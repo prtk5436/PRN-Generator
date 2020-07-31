@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> M I T A O E </title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+</head>
+<style>
+</style>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <div class="container">
+
+                <center>
+                    <img id="logo1" src="images/logoMIT.png" alt="VJHS logo" style="margin-top: 8px;">
+                    <br><br> </center>
+
+            </div>
+        </header>
+        <nav>
+            <div class="container">
+                <ul>
+                    <li><a href="#home">Home</a>
+                    </li>
+                    <li><a href="#form" onclick="showForm()">Admission</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <section id="main"><a name="home"></a>
+            <div role="main" class="container">
+                <br><br>
+                <center>
+                    <h2>About us </h2>
+                </center>
+                <br>
+                <div class="col-md-12">
+
+                    <article style=" text-align: justify;">We believe in providing a rich, stimulating environment for
+                        personalized as well as collaborative
+                        learning. This environment is conducive to fostering Academic Excellence and CreativeBrilliance.
+                        We are challenged at all times with global development and advancement. The education,
+                        being the foundation and the fundamental stage of a students development, has to work towards
+                        facing this challenge and strengthening a society. The ingeniously designed trending curriculum
+                        at
+                        The MITAOE is in sync with our motto, ‘EDUCATE, EXCEL, EMPOWER’. </article>
+
+                </div>
+                <hr>
+                <center>
+                    <h4>Academic Session Resumes with Virtual Classrooms and Online Pedagogy </h4>
+                    <h6>Never stop learning, because life never stops teaching.</h6>
+
+                </center><br>
+                <div class="col-sm-12 ">
+                    <article style=" text-align: justify;">As you all know, due to the CoViD19 pandemic, the world is
+                        facing a crisis like never before.
+                        This is an unprecedented situation in terms of breadth and scale, from a global health, social
+                        and economic standpoint. The MITAOE Team and the management sincerely wishes for the safety
+                        and
+                        well being of all the students, parents and family members.</article>
+                    <form>
+                        <div class="form-group"> <br /><br />
+                            <input type="button" value="Go to Admission Form" onclick="showForm()"
+                                class="btn btn-success btn-block" />
+                        </div>
+                </div>
+                </form><br>
+            </div>
+            <div id="f1" style="display: none;"><a name="form"></a>
+                <hr>
+                <form id="fid" name="myform">
+                    <h2>Application Form</h2><br>
+                    <div class="form-group">
+                        <strong>Student Name</strong>
+                        <br />
+                        <input type="text" id="fname" name="fname" class="form-control" />
+                        <span id="s1"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <strong>Mobile</strong>
+                        <br />
+                        <input type="text" id="lname" name="mobile" maxlength="10" class="form-control" />
+                        <span id="s2"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <strong>Email</strong>
+                        <br />
+                        <input type="text" id="email" name="email" class="form-control" />
+                        <span id="s3"></span>
+                    </div>
+                    <div class="form-group">
+                        <strong>Sequential No.</strong>
+                        <br />
+                        <input type="text" id="sno" name="sno" maxlength="25" class="form-control" />
+                        <span id="sno"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <strong>Academic Year </strong>
+                        <br />
+                        <input type="text" id="eno" name="eno" maxlength="10" class="form-control" />
+                        <span id="s2"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <strong>Branch</strong>
+                        <br />
+                        <select name="country" id="branch" class="form-control">
+                            <option>Computer Engineering</option>
+                            <option>Mechanical Engineering</option>
+                            <option>Civil Engineering</option>
+                            <option>Biochemical Engineering</option>
+                            <option>Information Technology</option>
+                        </select>
+                        <span id="s4"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <strong>Batch</strong>
+                        <br />
+                        <select name="batch" id="batch" class="form-control">
+                            <option>Batch A</option>
+                            <option>Batch B</option>
+                            <option>Batch C</option>
+                            <option>Batch D</option>
+                            <option>Batch E</option>
+                        </select>
+                        <span id="b1"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <strong>Gender</strong>
+                        <br />
+                        <div class="form-inline">
+                            <label><input type="radio" name="r1" value="Male" style="margin: 10px;"> Male</label>
+                            <label><input type="radio" name="r1" value="Female" style="margin: 15px;">
+                                Female</label>
+                            <span id="s5"></span>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <strong>Hobbies </strong>
+                        <br />
+                        <div class="form-inline">
+                            <label><input type="checkbox" class="hobbies" name="r1" value="Movies"
+                                    style="margin: 10px;">
+                                Movies</label>
+                            <label><input type="checkbox" class="hobbies" name="r1" value="Sports"
+                                    style="margin: 10px;">
+                                Sports</label>
+                            <label><input type="checkbox" class="hobbies" name="r1" value="Coding"
+                                    style="margin: 10px;">
+                                Coding</label>
+                            <label><input type="checkbox" class="hobbies" name="r1" value="Music" style="margin: 10px;">
+                                Music</label>
+                            <span id="s6"></span>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <br> <span id="s7"></span>
+                        <input type="button" value="SUBMIT" id="entry" class="btn btn-success btn-block" /><br>
+                    </div>
+                </form>
+
+                <script>
+                    function showForm() {
+                        var x = document.getElementById("f1");
+                        if (x.style.display === "none") {
+                            x.style.display = "block";
+                        } else {
+                            x.style.display = "none";
+                        }
+                    }
+
+                    var entry = document.getElementById("entry");
+                    entry.addEventListener("click", displayDetails);
+                    var row = 1;
+                    function displayDetails() {
+                        var fname = document.getElementById("fname").value;
+                        var fname1 = /^[a-zA-Z]+ [a-zA-Z]+$/;
+                        if (!fname.match(fname1)) {
+                            alert("You have entered an invalid first name");
+                            return false;
+                        }
+
+                        var lname = document.getElementById("lname").value;
+                        var lname1 = /^\d{10}$/;
+                        if (!lname.match(lname1)) {
+                            alert("You have entered an invalid ph number");
+                            return false;
+                        }
+                        var email = document.getElementById("email").value;
+
+                        var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+                        if (!email.match(mailformat)) {
+                            alert("You have entered an invalid email address!");
+                            return false;
+                        }
+
+                        var eno = document.getElementById("eno").value;
+                        var year = /^[0-9]+$/;
+                        if (!eno.match(year)) {
+                            alert("You have entered an invalid year!");
+                            return false;
+                        }
+
+                        var sno = document.getElementById("sno").value;
+                        var snoo = /^[0-9]+$/;
+                        if (!sno.match(snoo)) {
+                            alert("You have entered an invalid sequencial no!");
+                            return false;
+                        }
+                        var yer = eno.slice(-2);
+
+                        var branch = document.getElementById("branch");
+                        var bran = branch.options[branch.selectedIndex].value;
+                        var text;
+                        switch (bran) {
+                            case "Computer Engineering":
+                                text = "CS";
+                                break;
+                            case "Mechanical Engineering":
+                                text = "ME";
+                                break;
+                            case "Civil Engineering":
+                                text = "CE";
+                                break;
+                            case "Biochemical Engineering":
+                                text = "BE";
+                                break;
+                            case "Information Technology":
+                                text = "IT";
+                                break;
+                            default:
+                                text = "Kindly select branch";
+                                return false;
+                        }
+
+
+                        var batch = document.getElementById("batch");
+                        var bat = batch.options[batch.selectedIndex].value;
+                        var text1;
+                        switch (bat) {
+                            case "Batch A":
+                                text1 = "01";
+                                break;
+                            case "Batch B":
+                                text1 = "02";
+                                break;
+                            case "Batch C":
+                                text1 = "03";
+                                break;
+                            case "Batch D":
+                                text1 = "04";
+                                break;
+                            case "Batch E":
+                                text1 = "05";
+                                break;
+                            default:
+                                text1 = "Kindly select branch";
+                                return false;
+                        }
+
+                        var snor = document.getElementById("sno").value;
+                        var t;
+                        if (snor > 9999) {
+                            alert("Enter valid sequential number!")
+                            return false;
+                        }
+                        else if (snor <= 9 && snor >= 1) {
+                            t = "000";
+                        }
+                        else if (snor <= 99 && snor > 9) {
+                            t = "00"
+                        }
+                        else if (snor <= 999 && snor > 99) {
+                            t = "0"
+                        }
+                        else {
+                            t = "";
+                        }
+
+                        var coo = "Your PRN NO:";
+                        var co = yer.concat(text, text1, t, snor);
+                        var cooo = coo.concat(co);
+
+                        alert("Admission done Successfully...................!");
+                        alert(cooo);
+
+                        if (!fname || !lname || !email || !eno) {
+                            alert("Please fill all values.....");
+                            return;
+                        }
+                        var display = document.getElementById("display");
+                        var newRow = display.insertRow(row);
+
+                        var date = new Date();
+                        var timestamp = date.getTime();
+
+                        var cell1 = newRow.insertCell(0);
+                        var cell2 = newRow.insertCell(1);
+                        var cell3 = newRow.insertCell(2);
+                        var cell4 = newRow.insertCell(3);
+                        var cell5 = newRow.insertCell(4);
+                        var cell6 = newRow.insertCell(5);
+                        var cell7 = newRow.insertCell(6);
+                        var cell8 = newRow.insertCell(7);
+                        var cell9 = newRow.insertCell(8);
+
+                        cell1.innerHTML = fname;
+                        cell2.innerHTML = lname;
+                        cell3.innerHTML = email;
+                        cell4.innerHTML = sno;
+                        cell5.innerHTML = timestamp;
+
+                        cell6.innerHTML = eno;
+                        cell7.innerHTML = bran;
+                        cell8.innerHTML = bat;
+                        cell9.innerHTML = co;
+
+                        row++;
+                    }
+                </script>
+            </div>
+        </section>
+    </div>
+</body>
+
+</html>
